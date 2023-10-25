@@ -1,0 +1,17 @@
+• The Host name: compute0.wmin.ac.uk
+• Your Uni login name: w + 7 digits of your id number with w in lower case e.g. w1234567
+• Your Uni password.
+
+
+sql
+https://support.ecs.westminster.ac.uk/mysql/index.php
+The user's login is w1816963.
+
+MySQL port:	3306
+Your MySQL default database:	w1816963_0
+Your MySQL login name is:	w1816963
+Your MySQL password is:	k7DaYAnGPcyV
+
+
+
+https://w1816963.users.ecs.westminster.ac.uk/FYP/template.php
