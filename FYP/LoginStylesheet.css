@@ -1,0 +1,139 @@
+/* Existing CSS styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.centered-box {
+    width: 40vh;
+    max-height: 90vh; /* Set a maximum height for the centered box */
+    background-color: #35393C;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5vh;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the top of the box */
+    height: 100%; /* Make the container occupy full height of centered-box */
+}
+
+.centered-container h2 {
+    font-size: 10vh;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.video-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2, h3, p {
+    font-family: 'Lato', sans-serif;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /* Make input-container occupy full height of centered-box */
+}
+
+.login-input {
+    width: 80%;
+    padding: 2%;
+    border: none;
+    border-radius: 1.5vh;
+    background-color: #f2f2f2;
+    font-size: 2.5vh;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: auto; /* Center input fields horizontally */
+    margin-top: 4vh; /* Add a top margin to create a gap */
+    margin-bottom: 2vh; /* Add a bottom margin to create a gap */
+}
+
+.login-button, .register-button {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 1.5vh;
+    padding: 2% 4%;
+    cursor: pointer;
+    font-size: 2.2vh;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 5%;
+}
+
+.login-button:hover, .register-button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Display buttons vertically */
+    align-items: center;
+}
+
+.login-heading {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Drop shadow for login heading */
+    color: #35393C; 
+}
+
+.error-message {
+    color: red;
+    text-align: center; /* Center the text horizontally */
+    font-size: 2vh; /* Set the initial font size in viewport height units (vh) */
+}
+
+/* Media query to change font size based on viewport width */
+@media (max-width: 768px) {
+    .error-message {
+        font-size: 1.5vh; /* Adjust the font size for smaller screens */
+    }
+}
+
+
