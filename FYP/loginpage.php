@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,7 +62,7 @@
                         <input type="password" name="password" placeholder="Password" class="login-input" required>
                     </div>
                     <div class="input-container">
-                        <input type="telephone" name="Phone Number" placeholder="Phone Number" class="login-input" required>
+                        <input type="tel" name="telephone" placeholder="Phone Number" class="login-input" required>
                     </div>
                     <div class="button-container">
                         <button type="submit" class="register-button">Register</button>

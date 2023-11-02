@@ -23,7 +23,7 @@ if (!isset($_SESSION['user_id'])) {
 <body>
     <?php include("header.php"); ?>
 
-    <h2>Admin Homepage</h2>
+    <h2>User Homepage</h2>
 </body>
 <?php include("footer.php"); ?> 
 </html>
