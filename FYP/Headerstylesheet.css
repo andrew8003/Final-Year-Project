@@ -1,29 +1,27 @@
-
-
 /* Top bar styles */
 .top-bar {
-    background-color: #0074e4; /* Top bar background color */
-    color: #fff; /* Text color */
+    background-color: #0074e4;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Logout button styles */
 .logout-button {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 8px 16px; /* Adjust padding to make the button slightly bigger */
     border-radius: 5px;
-    background-color: #ff4444; /* Red color for logout button */
+    background-color: #ff4444;
     transition: background-color 0.3s;
+    font-size: 20px; /* Adjust font size for the button text */
 }
 
 .logout-button:hover {
-    background-color: #cc0000; /* Darker red color on hover */
+    background-color: #cc0000;
 }
 
 /* Home link styles */
@@ -32,47 +30,7 @@
     color: #fff;
     font-weight: bold;
     font-size: 20px;
-}
-
-/* Center the text in the middle of the top bar */
-.center {
-    text-align: center;
-}
-h1, h2, h3, p, a {
-    font-family: 'Lato', sans-serif;
-}
-/* Top bar styles */
-.top-bar {
-    background-color: #0074e4; /* Top bar background color */
-    color: #fff; /* Text color */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-}
-
-/* Logout button styles */
-.logout-button {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: #ff4444; /* Red color for logout button */
-    transition: background-color 0.3s;
-}
-
-.logout-button:hover {
-    background-color: #cc0000; /* Darker red color on hover */
-}
-
-/* Home link styles */
-.home-link {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
+    margin-left: 10px; /* Add spacing to the right of the Home link */
 }
 
 /* Center the text and image in the middle of the top bar */
@@ -84,7 +42,21 @@ h1, h2, h3, p, a {
 
 /* Home logo styles */
 .home-logo {
-    width: 30px; /* Adjust the width as needed */
-    height: 30px; /* Adjust the height as needed */
-    margin-right: 10px; /* Add spacing between the logo and text */
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Dashboard title styles */
+.dashboard-title {
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2, h3, p {
+    font-family: 'Lato', sans-serif;
+}
+
+html, body {
+    font-family: 'Lato', sans-serif;
 }

@@ -8,14 +8,27 @@ body {
 
 .centered-box {
     width: 40vh;
-    max-height: 90vh; /* Set a maximum height for the centered box */
+    max-height: 90vh;
     background-color: #35393C;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5vh;
+    border-radius: 2vh;
+    position: relative;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.centered-box::before {
+    content: "";
+    position: absolute;
+    top: -10px; /* Adjust the distance of the stroke from the box */
+    left: -10px; /* Adjust the distance of the stroke from the box */
+    width: calc(100% + 20px); /* Adjust the size to include the stroke */
+    height: calc(100% + 20px); /* Adjust the size to include the stroke */
+    background: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border-radius: 2vh;
+    z-index: -1; /* Place the stroke behind the box */
 }
 
 .centered-container {
@@ -90,29 +103,11 @@ h1, h2, h3, p {
     margin-top: 4vh; /* Add a top margin to create a gap */
     margin-bottom: 2vh; /* Add a bottom margin to create a gap */
 }
-
-.login-button, .register-button {
-    background-color: white;
-    color: #007bff;
-    border: 2px solid #007bff;
-    border-radius: 1.5vh;
-    padding: 2% 4%;
-    cursor: pointer;
-    font-size: 2.2vh;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s, color 0.3s;
-    margin-bottom: 5%;
-}
-
-.login-button:hover, .register-button:hover {
-    background-color: #007bff;
-    color: white;
-}
-
 .button-container {
     display: flex;
     flex-direction: column; /* Display buttons vertically */
     align-items: center;
+    margin-top: .5vh;
 }
 
 .login-heading {
@@ -135,5 +130,53 @@ h1, h2, h3, p {
         font-size: 1.5vh; /* Adjust the font size for smaller screens */
     }
 }
-
+.button-64 {
+    margin-bottom: 2vh;
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 5px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .button-64:active,
+  .button-64:hover {
+    outline: 0;
+  }
+  
+  .button-64 span {
+    background-color: #35393C;
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+  
+  .button-64:hover span {
+    background: none;
+  }
+  
+  @media (min-width: 768px) {
+    .button-64 {
+      font-size: 3vh;
+      min-width: 3vh;
+    }
+  }
 

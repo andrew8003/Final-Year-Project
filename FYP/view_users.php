@@ -29,17 +29,6 @@ if (!isset($_SESSION['user_id'])) {
 if (isset($_SESSION['usertype']) && $_SESSION['usertype'] === 'A') {
     // User is an admin, display the admin homepage content
     include("db.php"); // Include your database connection script
-
-    // Add code to fetch user counts, asset counts, and group counts from the database
-    $userCount; // Initialize the count
-    $assetCount; // Initialize the count
-    $groupCount; // Initialize the count
-
-    // You should retrieve these counts from your database using appropriate SQL queries
-
-    
-
-    // Display the counts under the buttons
     ?>
 
     <!DOCTYPE html>
@@ -50,7 +39,7 @@ if (isset($_SESSION['usertype']) && $_SESSION['usertype'] === 'A') {
         <link rel="stylesheet" href="Homepage.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
         <link rel="icon" href="media/favicon.png" type="favicon.png">
-        <title>Admin Dashboard</title>
+        <title>Users</title>
     </head>
     <body>
     <div class="video-container">
@@ -63,38 +52,15 @@ if (isset($_SESSION['usertype']) && $_SESSION['usertype'] === 'A') {
 
     <?php include("header.php"); ?>
 
-    <div class="button-container">
-    <a href="view_users.php" style="text-decoration: none;">
-        <button class="button-86" role="button">View / Edit Users</button>
-    </a>
-</div>
-    <div class="button-container">
-        <button class="button-86" role="button">Add Assets</button>
-    </div>
-    <div class="button-container">
-        <button class="button-86" role="button">View Assets</button>
-    </div>
- 
-    <div class="count-container">
-    <div class="count-item">
-        <table>
-            <tr>
-                <td>Users on System </td>
-                <td>Amount of Assets </td>
-                <td>Amount of Groups </td>
-            </tr>
-            <tr>
-                <td><?php echo $userCount; ?></td>
-                <td><?php echo $assetCount; ?></td>
-                <td><?php echo $groupCount; ?></td>
-            </tr>
-        </table>
-    </div>
-</div>
 
 
 
 
+
+
+
+
+    
     </body>
     <?php include("footer.php"); ?> 
     </html>

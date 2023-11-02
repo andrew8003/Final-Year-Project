@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Perform data validation here if needed
 
     // Construct the SQL query to insert data into the database
-    $sql = "INSERT INTO w1816963_0.inventory_system (usertype, username, password, email, telephone) VALUES ('U', '$username', '$password', '$email', '$telephone')";
+    $sql = "INSERT INTO w1816963_0.inventory_system (usertype, username, password, email, telephone, account_disabled) VALUES ('U', '$username', '$password', '$email', '$telephone', 0)";
 
     // Execute the SQL query
     if ($conn->query($sql) === TRUE) {
@@ -23,7 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error_message = "Error: " . $sql . "<br>" . $conn->error;
     }
 }
-
 
 // Close the database connection when done
 $conn->close();

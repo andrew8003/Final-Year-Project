@@ -54,13 +54,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Close the database connection when done
 $conn->close();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Incorrect Details</title>
+    <title>Login</title>
     <link rel="stylesheet" href="LoginStylesheet.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
     <link rel="icon" href="media/favicon.png" type="image/x-icon">
@@ -90,8 +89,9 @@ $conn->close();
                             <input type="password" name="password" placeholder="Password" class="login-input" required>
                         </div>
                         <div class="button-container">
-                            <button type="submit" class="login-button">Login</button>
-                            <button type="button" class="register-button" onclick="toggleRegistration()">Register</button>
+                            <!-- HTML !-->
+                            <button class="button-64" role="button"><span class="text">Login</span></button>
+                            <button class="button-64"onclick="toggleRegistration()" role="button"><span class="text">Register</span></button>
                         </div>
                         <div class="error-box">
                             <?php
@@ -118,11 +118,11 @@ $conn->close();
                         <input type="password" name="password" placeholder="Password" class="login-input" required>
                     </div>
                     <div class="input-container">
-                        <input type="text" name="telephone" placeholder="Phone Number" class="login-input" required>
+                        <input type="tel" name="telephone" placeholder="Phone Number" class="login-input" required>
                     </div>
                     <div class="button-container">
-                        <button type="submit" class="register-button">Register</button>
-                        <button type="button" class="login-button" onclick="toggleRegistration()">Back to Login</button>
+                        <button class="button-64" role="button"><span class="text">Register</span></button>
+                        <button class="button-64"onclick="toggleRegistration()" role="button"><span class="text">back To Login</span></button>
                     </div>
                 </form>
             </div>
@@ -134,22 +134,21 @@ $conn->close();
 
     <!-- Include the JavaScript code here after the HTML elements -->
     <script>
-function toggleRegistration() {
-    var loginFields = document.getElementById("login-fields");
-    var registrationFields = document.getElementById("registration-fields");
-    var loginHeading = document.querySelector(".login-heading");
+    function toggleRegistration() {
+        var loginFields = document.getElementById("login-fields");
+        var registrationFields = document.getElementById("registration-fields");
+        var loginHeading = document.querySelector(".login-heading");
 
-    if (loginFields.style.display === "block") {
-        loginFields.style.display = "none";
-        registrationFields.style.display = "block";
-        loginHeading.textContent = "REGISTER";
-    } else {
-        loginFields.style.display = "block";
-        registrationFields.style.display = "none";
-        loginHeading.textContent = "LOGIN";
+        if (loginFields.style.display === "block") {
+            loginFields.style.display = "none";
+            registrationFields.style.display = "block";
+            loginHeading.textContent = "REGISTER";
+        } else {
+            loginFields.style.display = "block";
+            registrationFields.style.display = "none";
+            loginHeading.textContent = "LOGIN";
+        }
     }
-}
     </script>
 </body>
 </html>
-

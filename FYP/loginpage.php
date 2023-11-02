@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,8 +36,9 @@
                             <input type="password" name="password" placeholder="Password" class="login-input" required>
                         </div>
                         <div class="button-container">
-                            <button type="submit" class="login-button">Login</button>
-                            <button type="button" class="register-button" onclick="toggleRegistration()">Register</button>
+                            <!-- HTML !-->
+                            <button class="button-64" role="button"><span class="text">Login</span></button>
+                            <button class="button-64"onclick="toggleRegistration()" role="button"><span class="text">Register</span></button>
                         </div>
                         <div class="error-box">
                             <?php
@@ -65,8 +68,8 @@
                         <input type="tel" name="telephone" placeholder="Phone Number" class="login-input" required>
                     </div>
                     <div class="button-container">
-                        <button type="submit" class="register-button">Register</button>
-                        <button type="button" class="login-button" onclick="toggleRegistration()">Back to Login</button>
+                        <button class="button-64" role="button"><span class="text">Register</span></button>
+                        <button class="button-64"onclick="toggleRegistration()" role="button"><span class="text">back To Login</span></button>
                     </div>
                 </form>
             </div>
@@ -78,21 +81,21 @@
 
     <!-- Include the JavaScript code here after the HTML elements -->
     <script>
-function toggleRegistration() {
-    var loginFields = document.getElementById("login-fields");
-    var registrationFields = document.getElementById("registration-fields");
-    var loginHeading = document.querySelector(".login-heading");
+    function toggleRegistration() {
+        var loginFields = document.getElementById("login-fields");
+        var registrationFields = document.getElementById("registration-fields");
+        var loginHeading = document.querySelector(".login-heading");
 
-    if (loginFields.style.display === "block") {
-        loginFields.style.display = "none";
-        registrationFields.style.display = "block";
-        loginHeading.textContent = "REGISTER";
-    } else {
-        loginFields.style.display = "block";
-        registrationFields.style.display = "none";
-        loginHeading.textContent = "LOGIN";
+        if (loginFields.style.display === "block") {
+            loginFields.style.display = "none";
+            registrationFields.style.display = "block";
+            loginHeading.textContent = "REGISTER";
+        } else {
+            loginFields.style.display = "block";
+            registrationFields.style.display = "none";
+            loginHeading.textContent = "LOGIN";
+        }
     }
-}
     </script>
 </body>
 </html>
