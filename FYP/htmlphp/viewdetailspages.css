@@ -1,0 +1,165 @@
+/*For the pages view_users.php and view_assets.php*/
+
+body {
+    background-color: #f0f0f0; /* Light gray background color */
+    transition: background-color 1s ease; /* Added transition property */
+    background-image: linear-gradient(45deg, #e2e8dd 21.43%, #b7d1da 21.43%, #b7d1da 28.57%, #95a3a4 28.57%, #95a3a4 50%, #e2e8dd 50%, #e2e8dd 71.43%, #b7d1da 71.43%, #b7d1da 78.57%, #95a3a4 78.57%, #95a3a4 100%);
+    background-size: 494.97px 494.97px;
+  }
+h1, h2, h3, p {
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.text-heading {
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Center-align the text */
+    transition: all 1s ease; /* Added transition property */
+    margin-top: 2.5vh;
+}
+
+.user-container {
+    text-align: center;
+    margin-top: 5vh;
+    transition: all 1s ease;
+}
+
+.user-details table {
+    margin: 0 auto;
+    border-collapse: collapse; /* Use 'collapse' for a more seamless border appearance */
+    width: 80%;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: all 1s ease;
+    border:none;
+    border-radius: 10px;
+}
+
+.user-details td {
+    padding: 10px;
+    border:none;
+}
+
+.user-details tr:first-child td {
+    font-weight: bold;
+    border:none;
+    font-size: 2vh;
+}
+
+@media only screen and (max-width: 768px) { 
+    section {
+        min-height: auto;
+    }
+
+    .menuItems {
+        flex-direction: column;
+
+        li {
+            margin: 1vh;
+        }
+    }
+}
+
+.table-controls {
+    margin: 0 auto;
+    border-collapse: collapse; /* Use 'collapse' for a more seamless border appearance */
+    margin-top: 20px;
+    transition: all 1s ease;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown {
+    margin-right: 10px;
+}
+
+.dropdown select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.dropdown button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-container {
+    margin-left: 10px;
+}
+
+.search-container input[type="text"] {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-container button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.button-container {
+    margin-top: 10px;
+    text-align: center; /* Center-align the button */
+}
+
+.borrow-history-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+.back-button {
+    background-color: #45a049; /* Darker green color */
+    padding: 10px 20px; /* Padding inside the button */
+margin-left: 20px; /* Adjust margin to create space from the left edge */
+/* Additional styles */
+}
+
+.back-button:hover {
+background-color: #3d8b3d;
+}
+/* Add CSS for row highlighting */
+.user-container tr:hover {
+background-color: #f5f5f5;
+cursor: pointer;
+}
+.user-container tr.clicked {
+background-color: #e0e0e0;
+}

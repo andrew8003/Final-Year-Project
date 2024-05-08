@@ -1,0 +1,85 @@
+/*for add_assets.php page*/
+
+body {
+  background-color: #f0f0f0;
+  transition: background-color 1s ease;
+  background-image: linear-gradient(45deg, #e2e8dd 21.43%, #b7d1da 21.43%, #b7d1da 28.57%, #95a3a4 28.57%, #95a3a4 50%, #e2e8dd 50%, #e2e8dd 71.43%, #b7d1da 71.43%, #b7d1da 78.57%, #95a3a4 78.57%, #95a3a4 100%);
+  background-size: 494.97px 494.97px;
+}
+  
+  h1, h2, h3, p {
+    font-family: 'Lato', sans-serif;
+    transition: all 1s ease;
+  }
+  
+  .text-heading {
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: all 1s ease;
+    margin-top: 2.5vh;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+input[type="radio"] {
+    display: inline-block;
+  }
+.asset-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-top: 10vh;
+    transition: all 1s ease; 
+    -webkit-text-stroke: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+.asset-form label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 3vh;
+    transition: all 1s ease; 
+}
+.asset-form form {
+    width: 50vw;
+    height: 5vh;
+    transition: all 1s ease; 
+}
+
+
+.asset-form input[type="text"],
+.asset-form textarea {
+  border: 1px solid #000000;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  resize: vertical;
+  min-height: 40px;
+}
+
+.asset-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #214bbd;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease; 
+    height: 200%;
+    align-items: center;
+}
+
+.asset-form input[type="submit"]:hover {
+    background-color: #0d77be;
+}
+.asset-form input[type="number"] {
+  width: 200px;
+  padding: 10px;
+}

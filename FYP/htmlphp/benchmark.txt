@@ -1,0 +1,23 @@
+on the add assets page i tested different sizes of multiple assets being added at once 
+
+10,000 assets at once takes - 
+1 Minute 50 Seconds (110s)
+
+5,000 assets at once takes - 
+50 seconds
+
+2,500 assets at once takes - 
+26seconds
+
+1,000 assets at once takes - 
+10 seconds
+
+500 assets at once takes - 
+5seconds
+
+100 assets at once takes -
+~1 second
+
+
+even with 60,0000 assets in the table the website still performs well, even loads the view_assets page within 1 second and sorting / searching is responsive
+at  around 100,000 assets the view assets page becomes very slow

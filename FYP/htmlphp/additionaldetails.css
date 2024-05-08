@@ -1,0 +1,181 @@
+body {
+    background-color: #f0f0f0;
+    transition: background-color 1s ease;
+    background-image: linear-gradient(45deg, #e2e8dd 21.43%, #b7d1da 21.43%, #b7d1da 28.57%, #95a3a4 28.57%, #95a3a4 50%, #e2e8dd 50%, #e2e8dd 71.43%, #b7d1da 71.43%, #b7d1da 78.57%, #95a3a4 78.57%, #95a3a4 100%);
+    background-size: 494.97px 494.97px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  h1, h2, h3, p {
+    font-family: 'Lato', sans-serif;
+    transition: all 1s ease;
+  }
+  
+  .text-heading {
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: all 1s ease;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  table {
+    background-color: white;
+    border-radius: 10px;
+    border-collapse: collapse;
+    margin: auto;
+    width: 75%;
+    table-layout: fixed;
+    transition: all 1s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table td, table th {
+    border: none;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    transition: all 1s ease;
+  }
+  
+  .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button {
+    background-color: #45a049;
+    padding: 10px 20px;
+    margin-left: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #3d8b3d;
+  }
+  
+  
+  #edit-button {
+    display: block;
+    width: 200px;
+    height: 60px;
+    font-size: 1.2em;
+    margin: 20px auto;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #save-button {
+    display: block;
+    width: 200px;
+    height: 60px;
+    font-size: 1.2em;
+    margin: 20px auto;
+    background-color: #29b625;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #delete-button {
+    display: block;
+    width: 200px;
+    height: 60px;
+    font-size: 1.2em;
+    margin: 20px auto;
+    background-color: #e61e1e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .editable-field {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    width: 80%;
+    box-sizing: border-box;
+    text-align: center;
+    resize: vertical;
+    min-height: 40px;
+  }
+  /* Centered container */
+  .centered-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  
+  /* Borrow button */
+  .borrow-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .borrow-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Text heading */
+  .text-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  select[name="borrow_time"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  }

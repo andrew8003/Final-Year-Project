@@ -1,0 +1,3 @@
+protection against sql injection and xss
+
+fix the add days in admin borrow details

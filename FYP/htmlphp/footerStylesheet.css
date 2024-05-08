@@ -1,0 +1,15 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #35393C;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 999;
+}
+
+
+body {
+    padding-bottom: 60px;
+}

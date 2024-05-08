@@ -1,0 +1,60 @@
+body {
+    background-color: #f0f0f0;
+    transition: background-color 1s ease;
+    background-image: linear-gradient(45deg, #e2e8dd 21.43%, #b7d1da 21.43%, #b7d1da 28.57%, #95a3a4 28.57%, #95a3a4 50%, #e2e8dd 50%, #e2e8dd 71.43%, #b7d1da 71.43%, #b7d1da 78.57%, #95a3a4 78.57%, #95a3a4 100%);
+    background-size: 494.97px 494.97px;
+  }
+  
+  h1, h2, h3, p {
+    font-family: 'Lato', sans-serif;
+    transition: all 1s ease;
+  }
+  
+  .text-heading {
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: all 1s ease;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  table {
+    background-color: white;
+    border-radius: 10px;
+    border-collapse: collapse;
+    margin: auto;
+    width: 60%;
+    table-layout: fixed;
+    transition: all 1s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table td, table th {
+    border: none;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    transition: all 1s ease;
+  }
+  .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #45a049;
+  }
+  
+  
